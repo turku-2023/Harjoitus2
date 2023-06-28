@@ -6,6 +6,8 @@ public class CollectionExample {
     public static void main(String args[]) {
         initializeStudentsList();
         printStudents();
+        printFirstStudent();
+        
     }
 
     public static void initializeStudentsList() {
@@ -20,5 +22,9 @@ public class CollectionExample {
         for (Student stu : studentsCollection) {
             System.out.println(stu.getFname() + " " + stu.getLname());
         }
+    }
+    public static void printFirstStudent(){
+        System.out.println("Ensimmäinen");
+        System.out.println(studentsCollection.get(0).getFname() + " " + studentsCollection.get(0).getLname());
     }
 }
